@@ -5,15 +5,6 @@ import numpy as np
 import xgboost
 from xgboost import XGBRegressor
 
-import os
-import gdown  
-
-
-if not os.path.exists('pipe.pkl'):
-    file_id = '13Mfl3masRADZCGgNZypldghLLe8p5Qzm'  
-    url = f'https://drive.google.com/uc?id={file_id}'
-    gdown.download(url, 'pipe.pkl', quiet=False)
-
 pipe = pickle.load(open('pipe.pkl','rb'))
 
 
