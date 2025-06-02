@@ -59,6 +59,12 @@ The model was trained and evaluated on a test set of T20 matches and demonstrate
 3. Input the current score, balls left, wickets out, and runs scored in the last 5 overs.  
 4. Click Predict Score to get the projected final score.
 
+
+## Try the Web App
+
+Try out the Cricket Score Predictor live on Streamlit:  
+[Cricket Score Predictor Web App](https://t20scorepredictor-8m6we2nljgttslpu65l5xr.streamlit.app/)
+
 ## Future Enhancements
 
 - **Second Innings Prediction**: Add functionality to predict scores in the second innings.  
