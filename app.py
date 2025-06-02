@@ -5,7 +5,16 @@ import numpy as np
 import xgboost
 from xgboost import XGBRegressor
 
-pipe = pickle.load(open('pipe.pkl','rb'))
+# pipe = pickle.load(open('pipe.pkl','rb'))
+from pipe import load_pipe
+import streamlit as st
+
+try:
+    pipe = load_pipe()
+except Exception as e:
+    st.error(f"Error loading model: {e}")
+    st.stop()
+
 
 
 teams = ['Australia',
